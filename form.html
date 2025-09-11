@@ -1,34 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body bgcolor="black">
-    <!-- <ol type="A" style="color: cornsilk;">
-        <li>CSE</li>
-        <li>CSE-AIML</li>
-        <li>EE</li>
-    </ol> -->
-    <ul style="color: cornsilk">
-      <li>CSE</li>
-      <li>CSE-AIML</li>
-      <li>EE</li>
-    </ul>
-    <dl style="color: cornsilk">
-      <dt>HTML</dt>
-      <dd>Hyper Text Markup Language</dd>
-      <dt>CSE</dt>
-      <dd>Computer Science and Enginnering</dd>
-    </dl>
-    <h1 style="color: cornsilk"><u>Favourite Countries To Visit </u> </h1>
-    <ol style="color: cornsilk;">
-        <li>New Zealand</li>
-        <li>Denmark</li>
-        <li>Switzerland</li>
-        <li>Netherland</li>
-        <li>Russia</li>
-    </ol>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+<body bgcolor="#2E2E2E">
+  <center>
+      <h1 style="color: floralwhite;">Registration Page</h1>
+    </center>
+    <form action="Submit" style="color: floralwhite;">
+      <table cellpadding="10">
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" name="name" placeholder="Enter your name"></td>
+        </tr>
+        <tr>
+          <td><label for="dob">Date of Birth:</label></td>
+          <td><input type="date" name="dob"></td>
+        </tr>
+        <tr>
+          <td><label>Gender:</label></td>
+          <td>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+          </td>
+        </tr>
+        <tr>
+          <td><label>Hobbies:</label></td>
+          <td>
+            <input type="checkbox" name="hobby" value="Reading"> Reading
+            <input type="checkbox" name="hobby" value="Writing"> Writing
+            <input type="checkbox" name="hobby" value="Travelling"> Travelling
+            <input type="checkbox" name="hobby" value="Coding"> Coding
+            <input type="checkbox" name="hobby" value="Playing"> Playing
+          </td>
+        </tr>
+        <tr>
+          <td><label for="contact">Contact Number:</label></td>
+          <td><input type="number" name="contact" placeholder="Enter your number"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" name="email" placeholder="Enter your Email"></td>
+        </tr>
+        <tr>
+          <td><label for="image">Upload Image:</label></td>
+          <td><input type="file" name="image"></td>
+        </tr>
+        <tr>
+          <td><label for="address">Address:</label></td>
+          <td><textarea name="address" rows="4" cols="25"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="Submit">
+          </td>
+        </tr>
+      </table>
+    </form>
+</body>
 </html>
